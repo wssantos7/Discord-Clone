@@ -1,137 +1,46 @@
-// Localização: prisma/schema.prisma
+# 🎮 SyncChord - Fullstack Discord Clone
 
-generator client {
-  provider = "prisma-client-js"
-}
+![Banner do Projeto](https://raw.githubusercontent.com/shadcn-ui/ui/main/apps/www/public/og.jpg) SyncChord é uma plataforma de comunicação em tempo real inspirada no Discord, construída com foco em performance, escalabilidade e uma experiência de usuário fluida. 
 
-datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
-}
+---
 
-enum MemberRole {
-  ADMIN
-  MODERATOR
-  GUEST
-}
+## ✨ Funcionalidades
 
-model Profile {
-  id       String @id @default(uuid())
-  userId   String @unique
-  name     String
-  imageUrl String @db.Text
-  email    String @db.Text
+* **🌐 Servidores Personalizados:** Crie, edite e gerencie seus próprios servidores com convites únicos.
+* **💬 Canais Dinâmicos:** Suporte para canais de **Texto, Áudio e Vídeo** (via LiveKit/WebRTC).
+* **⚡ Real-time Messaging:** Chat instantâneo utilizando **Socket.io**.
+    * Edição e exclusão de mensagens em tempo real.
+    * Upload de anexos (Imagens e PDFs).
+* **🛡️ Sistema de Permissões:** Cargos de Administrador, Moderador e Convidado (RBAC).
+* **🌓 Design Responsivo:** Totalmente adaptado para Dark e Light mode com **Tailwind CSS**.
+* **🔍 Busca Global:** Encontre canais e membros rapidamente.
 
-  servers  Server[]
-  members  Member[]
-  channels Channel[]
+---
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
+## 🛠️ Tecnologias Utilizadas
 
-model Server {
-  id         String @id @default(uuid())
-  name       String
-  imageUrl   String @db.Text
-  inviteCode String @unique
+| Camada | Tecnologia |
+| :--- | :--- |
+| **Framework** | [Next.js 15 (App Router)](https://nextjs.org/) |
+| **Estilização** | [Tailwind CSS](https://tailwindcss.com/) + [Shadcn/UI](https://ui.shadcn.com/) |
+| **Banco de Dados** | [PostgreSQL](https://www.postgresql.org/) (via Supabase/Neon) |
+| **ORM** | [Prisma](https://www.prisma.io/) |
+| **Autenticação** | [Clerk](https://clerk.com/) |
+| **Real-time** | [Socket.io](https://socket.io/) |
+| **Mídia (Voz/Vídeo)** | [LiveKit](https://livekit.io/) |
 
-  profileId String
-  profile   Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+---
 
-  members  Member[]
-  channels Channel[]
+## 🚀 Como Executar o Projeto
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+### Pré-requisitos
+* Node.js 18+ 
+* Uma conta no [Clerk](https://clerk.com/) para autenticação.
+* Uma instância de PostgreSQL (recomendo Supabase).
 
-  @@index([profileId])
-}
+### Passo a Passo
 
-model Member {
-  id   String     @id @default(uuid())
-  role MemberRole @default(GUEST)
-
-  profileId String
-  profile   Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
-
-  serverId String
-  server   Server @relation(fields: [serverId], references: [id], onDelete: Cascade)
-
-  messages Message[]
-  directMessages DirectMessage[]
-
-  conversationsInitiated Conversation[] @relation("MemberOne")
-  conversationsReceived  Conversation[] @relation("MemberTwo")
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  @@index([profileId])
-  @@index([serverId])
-}
-
-enum ChannelType {
-  TEXT
-  AUDIO
-  VIDEO
-}
-
-model Channel {
-  id   String      @id @default(uuid())
-  name String
-  type ChannelType @default(TEXT)
-
-  profileId String
-  profile   Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
-
-  serverId String
-  server   Server @relation(fields: [serverId], references: [id], onDelete: Cascade)
-
-  messages Message[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  @@index([profileId])
-  @@index([serverId])
-}
-
-model Message {
-  id      String @id @default(uuid())
-  content String @db.Text
-
-  fileUrl String? @db.Text
-
-  memberId String
-  member   Member @relation(fields: [memberId], references: [id], onDelete: Cascade)
-
-  channelId String
-  channel   Channel @relation(fields: [channelId], references: [id], onDelete: Cascade)
-
-  deleted Boolean @default(false)
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  @@index([channelId])
-  @@index([memberId])
-}
-
-syncchord/
-├── app/                  # Rotas do Next.js (App Router)
-│   ├── (auth)/           # Login e Registro (Clerk)
-│   ├── (main)/           # Layout principal do App
-│   │   ├── servers/
-│   │   │   └── [serverId]/
-│   │   │       ├── channels/[channelId]/
-│   │   │       └── layout.tsx
-│   └── api/              # Endpoints (Socket.io, Webhooks)
-├── components/           # Componentes Shadcn/UI
-│   ├── server/           # Sidebar do servidor e busca
-│   ├── navigation/       # Barra lateral esquerda (ícones de servidores)
-│   ├── chat/             # Input de texto, mensagens e cabeçalho
-│   └── modals/           # Modais de criar servidor, convidar, etc.
-├── hooks/                # Custom hooks (useSocket, useModal)
-├── lib/                  # Configurações (db.ts, utils.ts)
-└── public/               # Ativos estáticos# Discord-Clone
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/seu-usuario/syncchord.git](https://github.com/seu-usuario/syncchord.git)
+   cd syncchord
