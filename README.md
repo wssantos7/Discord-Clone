@@ -1,6 +1,6 @@
-# 🎮 SyncChord - Fullstack Discord Clone
+# 🎮 Discord Clone
 
-![Banner do Projeto](https://raw.githubusercontent.com/shadcn-ui/ui/main/apps/www/public/og.jpg) SyncChord é uma plataforma de comunicação em tempo real inspirada no Discord, construída com foco em performance, escalabilidade e uma experiência de usuário fluida. 
+Discord Clone é uma plataforma de comunicação em tempo real inspirada no Discord, construída com foco em performance, escalabilidade e uma experiência de usuário fluida. 
 
 ---
 
