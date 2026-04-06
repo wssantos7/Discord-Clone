@@ -57,7 +57,6 @@ RNF03: O sistema deve garantir segurança (criptografia de senha)
 RNF04: O sistema deve ser responsivo (mobile e desktop)
 RNF05: O sistema deve ter disponibilidade mínima de 99%
 
-
 ---
 
 ## 👥 User Stories
