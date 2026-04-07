@@ -41,11 +41,17 @@ Desenvolver uma aplicação que simula as principais funcionalidades do Discord,
 * Ação Principal: O botão "Registrar".
 ## <img width="1376" height="768" alt="Tela de Registro" src="https://github.com/user-attachments/assets/ceb3954f-cb4b-4c2a-9d2c-18b1b202b039" />
 
-* Dashboard (Servidores)
- <img width="1376" height="768" alt="Dashboard" src="https://github.com/user-attachments/assets/6692d109-d099-4ab7-8d69-9feb92eae554" />
+## 🏠 Dashboard
+* Esta imagem mostra o dashboard principal após o login. O layout é dividido em colunas, com foco na navegação lateral para servidores e canais, mas sem um chat ativo selecionado.
+* Navegação: Barra lateral de servidores e lista de canais.
+* Ação Principal: O prompt central "Selecione um canal para começar".
+## <img width="1376" height="768" alt="Dashboard" src="https://github.com/user-attachments/assets/6692d109-d099-4ab7-8d69-9feb92eae554" />
 
-* Tela de Chat
- <img width="1376" height="768" alt="Tela de Chat" src="https://github.com/user-attachments/assets/e65d7acc-91d1-456a-ac88-b5eb695989bb" />
+## 💬 Tela de Chat
+* Esta imagem detalha a experiência de conversa ativa. Ela expande a estrutura de colunas do dashboard, adicionando a lista de usuários online/offline e o fluxo de mensagens em tempo real.
+* Conteúdo: Mensagens de usuários, lista de membros e campo de entrada.
+* Ação Principal: Digitar no campo "Conversar em #geral...".
+## <img width="1376" height="768" alt="Tela de Chat" src="https://github.com/user-attachments/assets/e65d7acc-91d1-456a-ac88-b5eb695989bb" />
 
 ---
 
