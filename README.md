@@ -72,8 +72,13 @@ Desenvolver uma aplicação que simula as principais funcionalidades do Discord,
 ## 📊 Diagramas
 
 * Diagrama de Casos de Uso
+##  <img width="1536" height="1024" alt="Diagrama de Casos de Uso" src="https://github.com/user-attachments/assets/c28b2ead-dd8e-4510-a8e5-ba3a7ca272e5" />
+
 * Diagrama de Sequência
+## <img width="1536" height="1024" alt="Diagrama de sequência_ envio de mensagem" src="https://github.com/user-attachments/assets/3f4d4b0c-0c17-48d0-b7f6-1539df0b13d8" />
+  
 * Diagrama de Estados
+## <img width="1536" height="1024" alt="Diagrama de estados da mensagem" src="https://github.com/user-attachments/assets/4691d44e-3e21-47e7-b186-c4f71e0172d7" />
 
 ---
 
