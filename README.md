@@ -28,13 +28,11 @@ Desenvolver uma aplicação que simula as principais funcionalidades do Discord,
 
 ---
 
-## 📱 Telas
-
-🔐 Tela de Login
-*Campo de email
-*Campo de senha
-*Botão "Entrar"
- <img width="1376" height="768" alt="Tela de Login" src="https://github.com/user-attachments/assets/aed6c455-9ee7-4fa5-aa0f-93d157dd063c" />
+## 🔐 Tela de Login
+* Campo de email
+* Campo de senha
+* Botão "Entrar"
+* <img width="1376" height="768" alt="Tela de Login" src="https://github.com/user-attachments/assets/aed6c455-9ee7-4fa5-aa0f-93d157dd063c" />
 * Tela de Registro
  <img width="1376" height="768" alt="Tela de Registro" src="https://github.com/user-attachments/assets/ceb3954f-cb4b-4c2a-9d2c-18b1b202b039" />
 * Dashboard (Servidores)
