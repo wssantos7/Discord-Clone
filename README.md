@@ -31,12 +31,10 @@ Desenvolver uma aplicação que simula as principais funcionalidades do Discord,
 ## 🔐 Tela de Login
 
 * Esta imagem foca exclusivamente no painel de login 'ENTRAR', apresentando os campos modernos de email e senha, o botão azul e o link para registro, exatamente como visto na colagem original.
-
 * Design: Dark mode, limpo, com botões e campos arredondados.
-
 * Ação Principal: O botão "Entrar".
+## <img width="1376" height="768" alt="Tela de Login" src="https://github.com/user-attachments/assets/aed6c455-9ee7-4fa5-aa0f-93d157dd063c" />
 
-* <img width="1376" height="768" alt="Tela de Login" src="https://github.com/user-attachments/assets/aed6c455-9ee7-4fa5-aa0f-93d157dd063c" />
 * Tela de Registro
  <img width="1376" height="768" alt="Tela de Registro" src="https://github.com/user-attachments/assets/ceb3954f-cb4b-4c2a-9d2c-18b1b202b039" />
 * Dashboard (Servidores)
