@@ -86,11 +86,11 @@ Desenvolver uma aplicação que simula as principais funcionalidades do Discord,
 
 ## 🧍‍♂️ Histórias de Usuário
 
-US01: Como usuário, quero me cadastrar para acessar o sistema
-US02: Como usuário, quero fazer login para acessar minha conta
-US03: Como usuário, quero criar um servidor para organizar conversas
-US04: Como usuário, quero criar canais para separar assuntos
-US05: Como usuário, quero enviar mensagens para me comunicar em tempo real
+* US01: Como usuário, quero me cadastrar para acessar o sistema
+* US02: Como usuário, quero fazer login para acessar minha conta
+* US03: Como usuário, quero criar um servidor para organizar conversas
+* US04: Como usuário, quero criar canais para separar assuntos
+* US05: Como usuário, quero enviar mensagens para me comunicar em tempo real
 
 ---
 
