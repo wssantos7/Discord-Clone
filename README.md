@@ -20,11 +20,25 @@ Desenvolver uma aplicação que simula as principais funcionalidades do Discord,
 
 ---
 
-## 📊 Diagramas
+# 📋 Requisitos do Sistema
 
-* Diagrama de Casos de Uso
-* Diagrama de Sequência
-* Diagrama de Estados
+## ✅ Requisitos Funcionais
+
+* RF01: O sistema deve permitir o cadastro de usuários
+* RF02: O sistema deve permitir login de usuários
+* RF03: O usuário deve poder criar servidores
+* RF04: O usuário deve poder criar canais dentro de servidores
+* RF05: O usuário deve poder enviar mensagens em tempo real
+
+---
+
+## ⚙️ Requisitos Não Funcionais
+
+* RNF01: O sistema deve responder em até 2 segundos
+* RNF02: O sistema deve suportar múltiplos usuários simultâneos
+* RNF03: O sistema deve garantir segurança (criptografia de senha)
+* RNF04: O sistema deve ser responsivo (mobile e desktop)
+* RNF05: O sistema deve ter disponibilidade mínima de 99%
 
 ---
 
@@ -55,25 +69,11 @@ Desenvolver uma aplicação que simula as principais funcionalidades do Discord,
 
 ---
 
-# 📋 Requisitos do Sistema
+## 📊 Diagramas
 
-## ✅ Requisitos Funcionais
-
-* RF01: O sistema deve permitir o cadastro de usuários
-* RF02: O sistema deve permitir login de usuários
-* RF03: O usuário deve poder criar servidores
-* RF04: O usuário deve poder criar canais dentro de servidores
-* RF05: O usuário deve poder enviar mensagens em tempo real
-
----
-
-## ⚙️ Requisitos Não Funcionais
-
-* RNF01: O sistema deve responder em até 2 segundos
-* RNF02: O sistema deve suportar múltiplos usuários simultâneos
-* RNF03: O sistema deve garantir segurança (criptografia de senha)
-* RNF04: O sistema deve ser responsivo (mobile e desktop)
-* RNF05: O sistema deve ter disponibilidade mínima de 99%
+* Diagrama de Casos de Uso
+* Diagrama de Sequência
+* Diagrama de Estados
 
 ---
 
