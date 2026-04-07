@@ -84,5 +84,23 @@ Desenvolver uma aplicação que simula as principais funcionalidades do Discord,
 
 ## 👥 User Stories
 
-Ver arquivo `user-stories.md`
-****
+## 🧍‍♂️ Histórias de Usuário
+
+US01: Como usuário, quero me cadastrar para acessar o sistema
+US02: Como usuário, quero fazer login para acessar minha conta
+US03: Como usuário, quero criar um servidor para organizar conversas
+US04: Como usuário, quero criar canais para separar assuntos
+US05: Como usuário, quero enviar mensagens para me comunicar em tempo real
+
+---
+
+## 🃏 Cards (Estilo Scrum)
+
+| ID   | História            | Prioridade |
+| ---- | ------------------- | ---------- |
+| US01 | Cadastro de usuário | Alta       |
+| US02 | Login               | Alta       |
+| US03 | Criar servidor      | Média      |
+| US04 | Criar canal         | Média      |
+| US05 | Enviar mensagem     | Alta       |
+
